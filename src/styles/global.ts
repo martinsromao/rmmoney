@@ -24,16 +24,13 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-  background-color: var(--background);
+  background-color: var(--gray2);
   h1,h2,h3,h4,h5,h6,strong{
     color: var(--gray7);
     font-weight: 600;
   }
   p,span{
     color: var(--gray6);
-  }
-  :hover{
-    background-color: var(--gray5);
   }
   -webkit-font-smoothing:antialiased;
 
