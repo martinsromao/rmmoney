@@ -1,6 +1,11 @@
 import { Container, Content, Logo } from "./style";
 import logoIcon from "../../assets/logo.svg"
-export function Header() {
+interface HeaderProps {
+  onNewTransactionModal: () => void;
+}
+
+export function Header({ onNewTransactionModal }: HeaderProps) {
+
   return (
     <Container>
       <Content>
@@ -8,9 +13,10 @@ export function Header() {
           <img src={logoIcon} alt="rm money" />
           <h2>RM Money</h2>
         </Logo>
-        <button type="button">
+        <button type="button" onClick={onNewTransactionModal}>
           Nova transação
         </button>
+
       </Content>
 
     </Container>
