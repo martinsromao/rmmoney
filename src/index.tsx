@@ -1,23 +1,26 @@
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import React from "react";
-import { createServer } from "miragejs";
+import { createServer, Model } from "miragejs";
 
 createServer({
+
+  models: {
+    transaction: Model,
+  },
   routes() {
+
+
     this.namespace = 'api';
     this.get('/transaction', () => {
-      return [
-        {
-          id: 1,
-          title: 'transaction 1',
-          amount: 400,
-          type: 'deposit',
-          category: 'Food',
-          createdAt: new Date(),
-        }
+      return this.schema.all('transaction')
+    })
 
-      ]
+    this.post('/transaction', (schema, request) => {
+      const data = JSON.parse(request.requestBody)
+
+      return schema.create('transaction', data)
+
     })
   },
 })
