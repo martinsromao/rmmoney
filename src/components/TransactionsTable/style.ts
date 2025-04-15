@@ -18,9 +18,7 @@ table{
     background-color: var(--gray3);
     color: var(--gray6);
 
-    &:first-child{
-      color: var(--green-light);
-    }
+    
     &.deposit{
       color: var(--green);
 
