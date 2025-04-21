@@ -92,5 +92,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
   font-size: 1rem;
   color: var(--gray6);
 }
-
+@media screen and (max-width: 355px){
+  padding: 0 0.5rem;
+}
 `;

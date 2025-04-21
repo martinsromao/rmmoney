@@ -25,4 +25,9 @@ strong{
 .line-cor{
   background-color: var(--green-dark);
 }
+
+
+@media screen and (max-width: 749px){
+ grid-template-columns: none;
+}
 `;

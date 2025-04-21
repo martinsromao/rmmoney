@@ -24,10 +24,17 @@ button{
    // filter: brightness(0.9);
   }
 }
+@media screen and (max-width: 355px){
+  button{
+    font-size: 0.78rem;
+  }
+}
 `;
 
 export const Logo = styled.div`
 display: flex;
 align-items: center;
 gap: 1rem;
+
+
 `;

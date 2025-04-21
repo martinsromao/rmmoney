@@ -1,5 +1,5 @@
-
-
+import dateImg from '../../assets/Tipo=calendar.svg'
+import categoryImg from '../../assets/Tipo=delete.svg'
 import { Container } from "./style";
 import { useTransitionContext } from "../../hooks/useTransactionContext";
 
@@ -30,10 +30,13 @@ export function TransactionTable() {
                   currency: 'BRL'
                 }).format(transaction.amount)}
               </td>
-              <td>{transaction.category}</td>
-              <td>{new Intl.DateTimeFormat('pt-BR').format(
+
+              <td><img src={categoryImg} alt="img de categoria" />{transaction.category}</td>
+              <td> <img src={dateImg} alt="img de data" />{new Intl.DateTimeFormat('pt-BR').format(
                 new Date(transaction.createAt)
               )}</td>
+
+
             </tr>
           ))}
         </tbody>
