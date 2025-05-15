@@ -1,11 +1,11 @@
 import dateImg from '../../assets/Tipo=calendar.svg'
 import categoryImg from '../../assets/Tipo=delete.svg'
 import { Container } from "./style";
-import { useTransitionContext } from "../../hooks/useTransactionContext";
+import { useTransactionContext } from "../../hooks/useTransactionContext";
 
 
 export function TransactionTable() {
-  const { transactions } = useTransitionContext()
+  const { transactions } = useTransactionContext()
 
 
   return (
