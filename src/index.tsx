@@ -31,18 +31,14 @@ createServer({
     })
   },
   routes() {
-
-
     this.namespace = 'api';
-    this.get('/transaction', () => {
+    this.get('/transactions', () => { // Corrigido de /transaction
       return this.schema.all('transaction')
     })
 
-    this.post('/transaction', (schema, request) => {
+    this.post('/transactions', (schema, request) => { // Corrigido de /transaction
       const data = JSON.parse(request.requestBody)
-
       return schema.create('transaction', data)
-
     })
   },
 })
