@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/rmmoney/static/js/main.5c285608.js",
+    "main.js": "/rmmoney/static/js/main.9ec13cbe.js",
     "static/media/Tipo=delete.svg": "/rmmoney/static/media/Tipo=delete.99f0afffbbc9900b4fb4020c125563ec.svg",
     "static/media/Tipo=calendar.svg": "/rmmoney/static/media/Tipo=calendar.6c8663de86617f2307c0c16ccb8baeb2.svg",
     "static/media/logo.svg": "/rmmoney/static/media/logo.9ef740fc2d6459bb4ab2605cb53556f4.svg",
@@ -9,9 +9,9 @@
     "static/media/outcome.svg": "/rmmoney/static/media/outcome.6eb96d3079777422e5bd5deaa688a46e.svg",
     "static/media/income.svg": "/rmmoney/static/media/income.d58effe2f7ca5d17f64c8350e5fa2fe2.svg",
     "static/media/close.svg": "/rmmoney/static/media/close.f62862c6571367515ce17c7b4e77a1fc.svg",
-    "main.5c285608.js.map": "/rmmoney/static/js/main.5c285608.js.map"
+    "main.9ec13cbe.js.map": "/rmmoney/static/js/main.9ec13cbe.js.map"
   },
   "entrypoints": [
-    "static/js/main.5c285608.js"
+    "static/js/main.9ec13cbe.js"
   ]
 }
